@@ -15,9 +15,9 @@
         "illuminate/support": "^12.0|^13.0",
         "illuminate/view": "^12.0|^13.0",
         "spatie/laravel-package-tools": "^1.16",
-        "wotz/filament-media-library": "^4.0",
-        "wotz/filament-settings": "^2.0",
-        "wotz/laravel-locale-collection": "^2.0"
+        "wotz/filament-media-library": "^4.0|dev-copilot/update-package-php-8-5-laravel-13 as 4.1",
+        "wotz/filament-settings": "^2.0|dev-copilot/update-package-php-8-5-laravel-13 as 2.1",
+        "wotz/laravel-locale-collection": "^2.0|dev-copilot/update-package-php-8-5-laravel-13 as 2.1"
     },
     "require-dev": {
         "larastan/larastan": "^2.0|^3.0",
