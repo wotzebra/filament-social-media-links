@@ -5,7 +5,7 @@ namespace Wotz\SocialMediaLinks\Views\Components;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Illuminate\View\Component;
-use Wotz\MediaLibrary\Models\Attachment;
+use Wotz\MediaLibrary\Support\Config;
 
 class Overview extends Component
 {
@@ -32,7 +32,7 @@ class Overview extends Component
     public function structuredData()
     {
         $locale = strtolower(app()->getLocale());
-        $image = Attachment::find(setting('filament-social-media-links.image_structured_data_' . $locale . '_id'));
+        $image = Config::attachmentModel()::find(setting('filament-social-media-links.image_structured_data_' . $locale . '_id'));
 
         return json_encode([
             '@context' => 'https://schema.org',
